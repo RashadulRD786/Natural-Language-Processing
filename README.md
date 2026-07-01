@@ -69,14 +69,14 @@ Raw Reviews
     │
     ├──────────────────┬──────────────────┐
     ▼                  ▼                  ▼
-[Q3: Classification] [Q4: Clustering]  [Q5: Sentiment Analysis]
+[Classification] [Clustering]  [Sentiment Analysis]
 ```
 
 ---
 
 ##  Tasks & Results
 
-### Q3 — Text Classification
+### Text Classification
 
 Three classical classifiers trained on TF-IDF features:
 
@@ -90,7 +90,7 @@ Three classical classifiers trained on TF-IDF features:
 
 ---
 
-### Q4 — Text Clustering
+### Text Clustering
 
 TF-IDF reduced to 2 dimensions via **TruncatedSVD** (used instead of PCA since TF-IDF is sparse — PCA would require densifying 136k features, exceeding memory limits). Optimal k=2 selected using combined elbow method + silhouette score analysis.
 
@@ -104,7 +104,7 @@ TF-IDF reduced to 2 dimensions via **TruncatedSVD** (used instead of PCA since T
 
 ---
 
-### Q5 — Sentiment Analysis
+### Sentiment Analysis
 
 Three fundamentally different approaches compared on the same 9,917 test reviews:
 
